@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .anim {
+ display: flex;
+overflow: hidden;
+background: #003049;
+
+}
+
+.anim h1{
+  font-size: 48px;
+  white-space: nowrap;
+  padding: 0 6rem;
+  letter-spacing: 1px;
+  animation: moving 6000ms linear infinite;
+  color: #E57C14;
+}
+
+@keyframes moving {
+    0%{transform: translate(0);}
+    100%{transform: translate(-100%);}
+}
+ */
+ /* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color:#4630E4 ;
+  padding: 20px 20px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+ 
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  color: white;
+  margin-top: 10px;
+  
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display:block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+   
+  }
+ 
+
+}
